@@ -16,5 +16,6 @@
  - [x] Init project
  - [x] Add express
  - [x] Add gitignore
- - [ ] Add base furniture controller
- - [ ] Add CORS 
+ - [x] Add base furniture controller
+ - [x] Add routes
+ - [x] Add CORS 

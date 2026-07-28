@@ -1,1 +1,20 @@
-console.log('Hello world!');
+import express from 'express';
+import routes from './routes.js';
+import cors from 'cors';
+
+const app = express();
+
+app.use(cors());
+
+app.get('/', (req, res) => {
+    res.send('Hello world');
+});
+
+app.use(routes);
+
+
+const PORT = process.env.PORT || 3030;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port http://localhost:${PORT}`);
+})
