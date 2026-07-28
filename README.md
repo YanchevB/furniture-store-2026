@@ -10,3 +10,7 @@
  - [x] Install packages
  - [x] Install vite
  - [x] Add dev script
+
+
+### Setup REST API
+ - [x] Init project
