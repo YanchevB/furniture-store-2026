@@ -26,3 +26,4 @@
  - [x] Add user model
  - [x] Add validation
  - [x] Hash password
+ - [x] Generate token
