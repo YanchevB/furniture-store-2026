@@ -29,7 +29,7 @@ model Furniture {
   year        Int
   description String
   price       Float
-  imageUrl    String
+  img         String
   material    String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt

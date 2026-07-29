@@ -1,5 +1,7 @@
 import { prisma } from "../lib/prisma.js";
 
-export function create(furnitureData) {
-    
+export async function create(furnitureData) {
+    return await prisma.furniture.create({
+        data: furnitureData
+    });
 }

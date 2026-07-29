@@ -39,7 +39,7 @@
  - [x] Validate input
  - [x] Add error util for messages
  - [x] Add Furniture model
- - [ ] Add furniture service with create method
+ - [x] Add furniture service with create method
  - [ ] List all furnitures
  - [ ] Map id to _id
  - [ ] Furniture details

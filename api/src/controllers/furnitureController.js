@@ -1,4 +1,5 @@
 import { createFurnitureSchema } from "../schemas/furnitureSchema";
+import { furnitureService } from "../services";
 import { getErrorMessage } from "../utils/errorUtils";
 
 export function getAll(req, res) {
@@ -13,7 +14,7 @@ export async function create(req, res) {
         return res.status(400).json({message: getErrorMessage(error)});
     }
 
-    
+    const furniture = furnitureService.create(data);
 
-    res.json({message:'Furniture created', furniture: data});
+    res.json({message:'Furniture created', furniture});
 }
