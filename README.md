@@ -42,7 +42,7 @@
  - [x] Add furniture service with create method
  - [x] List all furnitures
  - [x] Map id to _id
- - [ ] Furniture details
+ - [x] Furniture details
 
 ## Ownership Functions
  - [ ] Setup one to many relation
