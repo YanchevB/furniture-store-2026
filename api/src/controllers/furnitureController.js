@@ -2,9 +2,9 @@ import { createFurnitureSchema } from "../schemas/furnitureSchema";
 import { furnitureService } from "../services";
 import { getErrorMessage } from "../utils/errorUtils";
 
-export function getAll(req, res) {
-    console.log(req.user);
-    res.json([]);
+export async function getAll(req, res) {
+    const furnitures = await furnitureService.getAll()
+    res.json(furnitures);
 } 
 
 export async function create(req, res) {
