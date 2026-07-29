@@ -36,9 +36,9 @@
 ## Furniture Endpoints
  - [x] Create furniture endpoint
  - [x] Add create furniture schema
- - [ ] Validate input
+ - [x] Validate input
  - [x] Add error util for messages
- - [ ] Add Furniture model
+ - [x] Add Furniture model
  - [ ] Add furniture service with create method
  - [ ] List all furnitures
  - [ ] Map id to _id
