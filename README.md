@@ -11,7 +11,6 @@
  - [x] Install vite
  - [x] Add dev script
 
-
 ### Setup REST API
  - [x] Init project
  - [x] Add express
@@ -25,3 +24,5 @@
  - [x] Add json parser
  - [x] Setup database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
  - [x] Add user model
+ - [x] Add validation
+ - [x] Hash password
