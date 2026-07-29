@@ -28,3 +28,6 @@
  - [x] Hash password
  - [x] Generate token
  - [x] Add logout
+ - [x] Add login user controller
+ - [x] Add auth middleware
+ - [ ] Add error util for messages
