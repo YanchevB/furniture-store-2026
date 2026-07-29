@@ -20,3 +20,7 @@ export async function register(req, res) {
     }
     
 }
+
+export async function logout(req, res) {
+    res.json({ message: "Logged out successfully"});
+}

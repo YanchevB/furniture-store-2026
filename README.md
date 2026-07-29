@@ -27,3 +27,4 @@
  - [x] Add validation
  - [x] Hash password
  - [x] Generate token
+ - [x] Add logout
