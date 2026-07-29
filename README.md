@@ -1,33 +1,55 @@
 # Furniture Store Project
 
-### Initial setup
- - [x] Create project repo
+## Initial Setup
+ - [x] Create repository
  - [x] Initial folder structure
  - [x] Add client resources
- - [x] Setup gitignore
 
-### Setup client dev env
- - [x] Install packages
- - [x] Install vite
- - [x] Add dev script
+## Setup client dev env
+ - [x] Install packages `npm i`
+ - [x] Install vite `npm i -D vite`
+ - [x] Add dev script  
+ - [x] Add node_modules to .gitignore 
 
-### Setup REST API
- - [x] Init project
+## Setup REST API
+ - [x] Initialize project
  - [x] Add express
  - [x] Add gitignore
  - [x] Add base furniture controller
  - [x] Add routes
- - [x] Add CORS 
+ - [x] Add CORS
 
-### Authentication and Authorization
- - [x] Create user controller
+## Authentication and Authorization
+ - [x] Create user controller with register endpoint
  - [x] Add json parser
- - [x] Setup database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
+ - [x] Setup prisma orm database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
+ - [x] Change node with tsx
  - [x] Add user model
  - [x] Add validation
- - [x] Hash password
- - [x] Generate token
+ - [x] Hash password with zod transform and bcrypt
+ - [x] Generate token 
  - [x] Add logout
- - [x] Add login user controller
+ - [x] Add login to user controller
  - [x] Add auth middleware
- - [ ] Add error util for messages
+ - [x] Add isAuth middleware
+
+## Furniture Endpoints
+ - [x] Create furniture endpoint
+ - [x] Add create furniture schema
+ - [ ] Validate input
+ - [x] Add error util for messages
+ - [ ] Add Furniture model
+ - [ ] Add furniture service with create method
+ - [ ] List all furnitures
+ - [ ] Map id to _id
+ - [ ] Furniture details
+
+## Ownership Functions
+ - [ ] Setup one to many relation
+ - [ ] Add owner on furniture create
+ - [ ] Delete furniture
+ - [ ] Edit furniture
+ - [ ] My furnitures
+
+## Bonus
+ - [ ] Invalidate user session

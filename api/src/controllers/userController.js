@@ -1,5 +1,6 @@
 import { userSchema } from "../schemas/userSchema";
 import { userService } from "../services";
+import { getErrorMessage } from "../utils/errorUtils";
 import { generateAuthToken } from "../utils/tokenUtils";
 
 export async function register(req, res) {
@@ -34,7 +35,7 @@ export async function login(req, res) {
         });
 
     } catch(err) {
-        res.status(400).json({ err: err.message });
+        res.status(400).json({ err: getErrorMessage(err) });
     }
 
 
