@@ -22,4 +22,6 @@
 
 ### Authentication and Authorization
  - [x] Create user controller
- - [ ] Add json parser
+ - [x] Add json parser
+ - [x] Setup database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
+ - [x] Add user model
