@@ -19,3 +19,7 @@
  - [x] Add base furniture controller
  - [x] Add routes
  - [x] Add CORS 
+
+### Authentication and Authorization
+ - [x] Create user controller
+ - [ ] Add json parser
