@@ -41,7 +41,7 @@
  - [x] Add Furniture model
  - [x] Add furniture service with create method
  - [x] List all furnitures
- - [ ] Map id to _id
+ - [x] Map id to _id
  - [ ] Furniture details
 
 ## Ownership Functions
