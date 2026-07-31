@@ -32,3 +32,28 @@ export async function create(req, res) {
 
     res.json({message:'Furniture created', furniture});
 }
+
+export async function remove(req, res) {
+    const { furnitureId } = req.params;
+    const userId = req.user.id;
+
+    const furniture = await furnitureService.getById(furnitureId);
+
+    if (!furniture) {
+        return res.status(404).json({ message: 'Furniture not found!' });
+    }
+
+    if (furniture.userId !== userId) {
+        res.status(403).json({ message: "You are not authorized to delete this furniture" });
+    }
+
+    try{
+        await furnitureService.remove(furnitureId, userId);
+    
+        res.json({ message: 'Furniture delete' });
+        
+    } catch(err) {
+        res.status(500).json({ message: 'Error deleting furniture' });
+    }
+
+}

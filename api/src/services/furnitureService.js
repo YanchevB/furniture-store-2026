@@ -31,3 +31,12 @@ export async function create(furnitureData, userId) {
         }
     });
 }
+
+export async function remove(furnitureId, userId) {
+    return await prisma.furniture.delete({
+        where: {
+            id: furnitureId,
+            userId
+        }
+    });
+}
