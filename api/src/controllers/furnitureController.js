@@ -1,9 +1,18 @@
 import { createFurnitureSchema } from "../schemas/furnitureSchema";
 import { furnitureService } from "../services";
 import { getErrorMessage } from "../utils/errorUtils";
+import querystring from 'querystring';
 
 export async function getAll(req, res) {
-    const furnitures = await furnitureService.getAll()
+    let filter = {};
+
+    if (req.query.where) {
+        const result = querystring.parse(req.query.where.replaceAll('"', ''));
+
+        filter.userId = result._ownerId;
+    }
+
+    const furnitures = await furnitureService.getAll(filter)
     res.json(furnitures);
 } 
 
