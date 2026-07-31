@@ -48,7 +48,7 @@
  - [x] Setup one to many relation
  - [x] Add owner on furniture create
  - [x] Delete furniture
- - [ ] Edit furniture
+ - [x] Edit furniture
  - [ ] My furnitures
 
 ## Bonus

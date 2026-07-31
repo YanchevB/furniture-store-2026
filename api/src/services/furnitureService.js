@@ -40,3 +40,13 @@ export async function remove(furnitureId, userId) {
         }
     });
 }
+
+export async function update(furnitureId, userId, furnitureData) {
+    return await prisma.furniture.update({
+        where: {
+            id: furnitureId,
+            userId,
+        },
+        data: furnitureData
+    });
+}

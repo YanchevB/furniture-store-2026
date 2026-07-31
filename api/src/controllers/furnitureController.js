@@ -57,3 +57,17 @@ export async function remove(req, res) {
     }
 
 }
+
+export async function update(req, res) {
+    const { furnitureId } = req.params;
+    const userId = req.user.id;
+
+    try {
+        const furnitureData = createFurnitureSchema.parse(req.body);
+        const updatedFurniture = await furnitureService.update(furnitureId, userId, furnitureData);
+        
+        res.json({ message: "Furniture updated", furniture: updatedFurniture})
+    } catch(err) {
+        res.status(500).json({ message: getErrorMessage(err) });
+    }
+}
