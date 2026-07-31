@@ -20,13 +20,15 @@ export async function getById(req, res) {
 }
 
 export async function create(req, res) {
+    const userId = req.user.id;
+
     const {success, data, error} = createFurnitureSchema.safeParse(req.body);
 
     if(!success) {
         return res.status(400).json({message: getErrorMessage(error)});
     }
 
-    const furniture = furnitureService.create(data);
+    const furniture = furnitureService.create(data, userId);
 
     res.json({message:'Furniture created', furniture});
 }

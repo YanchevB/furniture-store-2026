@@ -20,11 +20,14 @@ export async function getById(furnitureId) {
         }
     })
 
-    return result ? { ...result, _id: result.id } : null;
+    return result ? { ...result, _id: result.id, _ownerId: result.userId } : null;
 }
 
-export async function create(furnitureData) {
+export async function create(furnitureData, userId) {
     return await prisma.furniture.create({
-        data: furnitureData
+        data: {
+            ...furnitureData,
+            userId
+        }
     });
 }

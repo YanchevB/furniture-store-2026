@@ -45,8 +45,8 @@
  - [x] Furniture details
 
 ## Ownership Functions
- - [ ] Setup one to many relation
- - [ ] Add owner on furniture create
+ - [x] Setup one to many relation
+ - [x] Add owner on furniture create
  - [ ] Delete furniture
  - [ ] Edit furniture
  - [ ] My furnitures
