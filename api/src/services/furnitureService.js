@@ -1,7 +1,14 @@
 import { prisma } from "../lib/prisma.js";
 
 export async function getAll() {
-    const result = await prisma.furniture.findMany();
+    const result = await prisma.furniture.findMany({
+        select: {
+            id: true,
+            description: true,
+            price: true,
+            img: true
+        }
+    });
 
     return result.map(f => ({ ...f, _id: f.id}));
 }
